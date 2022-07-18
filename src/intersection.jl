@@ -3,9 +3,9 @@ mutable struct PointVector
   endPoint::Point
   x::Number
   y::Number
-
-  PointVector(startPoint::Point, endPoint::Point) = new(startPoint, endPoint, endPoint.x - startPoint.x, endPoint.y - startPoint.y)
 end
+
+PointVector(startPoint::Point, endPoint::Point) = PointVector(startPoint, endPoint, endPoint.x - startPoint.x, endPoint.y - startPoint.y)
 
 negative(vector::PointVector) = PointVector(vector.endPoint, vector.startPoint)
 product(vectorA::PointVector, vectorB::PointVector) = vectorA.x * vectorB.y - vectorB.x * vectorA.y
