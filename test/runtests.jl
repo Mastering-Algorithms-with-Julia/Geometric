@@ -1,4 +1,4 @@
-using Geometric, Test, Graph
+using Geometric, Test
 
 @testset "test intersection" begin
   P3 = (x = -0.5, y = 3)
