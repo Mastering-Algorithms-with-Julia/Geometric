@@ -10,22 +10,3 @@ using Geometric, Test, Graph
   @test intersection(P1, P2, P3, P4) == true
 end
 
-@testset "test dijkstra" begin
-  graph = UnDirectedGraph(Char)
-  for vertex in 'A':'G'
-    insertVertex!(graph, vertex)
-  end
-
-  insertEdge!(graph, 'A', 'B', 5)
-  insertEdge!(graph, 'A', 'C', 2)
-  insertEdge!(graph, 'B', 'D', 1)
-  insertEdge!(graph, 'B', 'E', 6)
-  insertEdge!(graph, 'C', 'D', 6)
-  insertEdge!(graph, 'C', 'F', 8)
-  insertEdge!(graph, 'D', 'E', 1)
-  insertEdge!(graph, 'D', 'F', 2)
-  insertEdge!(graph, 'E', 'G', 7)
-  insertEdge!(graph, 'F', 'G', 3)
-
-  @show dijkstra(graph, 'A', 'G')
-end
