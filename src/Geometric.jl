@@ -1,7 +1,9 @@
 module Geometric
+using Graph
+using Heap
 
 include("point.jl")
 include("intersection.jl")
-
-export Point, intersection
+include("dijkstra.jl")
+export Point, intersection, dijkstra
 end # module
