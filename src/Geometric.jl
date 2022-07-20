@@ -5,6 +5,8 @@ using LinkedList
 include("point.jl")
 include("intersection.jl")
 include("cvxhull.jl")
+include("arclen.jl")
 
-export Point, intersection, cvxhull
+export Point, SphericalPoint
+export intersection, cvxhull, arclen
 end # module

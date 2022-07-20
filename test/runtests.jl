@@ -32,3 +32,10 @@ end
 
   @show cvxhull(points)
 end
+
+@testset "test arclen" begin
+  point1 = SphericalPoint(3, π / 4, π / 2)
+  point2 = SphericalPoint(3, π / 4, π / 4)
+
+  @show arclen(point1, point2)
+end

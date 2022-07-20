@@ -36,3 +36,18 @@
     @show cvxhull(points)
   end
 #+end_src
+
+** 球面弧长
+#+begin_src julia
+  point1 = SphericalPoint(3, π / 4, π / 2)
+  point2 = SphericalPoint(3, π / 4, π / 4)
+
+  @show arclen(point1, point2)
+#+end_src
+** 补充
+*** 不要对结构体使用 =repeat=
+#+begin_src julia
+  p1rct, p2rct = repeat([Point(0, 0, 0)], 2)
+#+end_src
+
+这样 =p1rct= 和 =p2rct= 会指向同一个结构对象，他们会一起更改
