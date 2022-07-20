@@ -12,7 +12,7 @@ uuid = "b77e0a4c-d291-57a0-90e8-8db25a27a240"
 
 [[deps.LinkedList]]
 deps = ["Test"]
-git-tree-sha1 = "9331f206f3561e9afe370d17e2a1c66a75d5549c"
+git-tree-sha1 = "8b726fad9646ed2c23b4952bba7e616672bba813"
 repo-rev = "master"
 repo-url = "https://github.com/nesteiner/LinkedList.jl.git"
 uuid = "8bb5f1f9-8766-4891-94ae-ce2d9eef0394"
