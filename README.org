@@ -1,4 +1,4 @@
-* 图算法
+* 计算几何
 ** 线段相交
 #+begin_src julia
   @testset "test intersection" begin
